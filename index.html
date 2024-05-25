@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C.E.I.P Zfon</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .banner-image {
+        background-image: url("img/banner.jpg");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">C.E.I.P Zfon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="login.html">
+                Iniciar Sesión
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div class="content text-center">
+        <h1
+          style="font-family: Arial, Helvetica, sans-serif"
+          class="text-white">
+          C.E.I.P Zfon
+        </h1>
+      </div>
+    </div>
+
+    <div class="container my-5 d-grid gap-5">
+      <div class="p-5 border">
+        <p>
+          Recursos para Profesores.
+          <br />
+          Accede a muchos de nuestros recursos, fichas, exámenes y también
+          fichas interactivas.
+        </p>
+      </div>
+      <div class="p-5 border">
+        <p>
+          Ayuda para Padres.
+          <br />
+          Consulta los horarios de clase, la programación semanal y echa un
+          vistazo a las fichas, deberes y exámenes.
+        </p>
+      </div>
+      <div class="p-5 border">
+        <p>
+          Recursos de aprendizaje
+          <br />
+          Los niños tabmién podrán usar esta plataforma y aprender gracias a
+          nuestras fichas interactivas
+        </p>
+      </div>
+      <div class="text-center">
+        <p>Registrate ahora y accede a todas nuestras caracteristicas</p>
+        <a href="login.html" class="btn btn-outline-primary">Iniciar sesión</a>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script>
+  </body>
+</html>

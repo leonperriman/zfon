@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C.E.I.P Zfon - Login</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <br />
+    <br />
+    <div style="font-family: Arial, Helvetica, sans-serif" class="text-center">
+      <div>
+        <h1>Iniciar Sesión</h1>
+      </div>
+      <div>
+        <p>
+          ¿Es tu primera vez?
+          <a style="color: black" href="">Registrate</a>
+        </p>
+      </div>
+    </div>
+    <form class="form" style="text-align: center">
+      <input
+        style="width: 350px; height: 50px"
+        type="search"
+        placeholder="  Email"
+        id="txtCorreo"
+        list="listaGente" />
+      <br />
+      <br />
+      <input
+        id="txtContrasenna"
+        placeholder="  Contraseña"
+        type="password"
+        style="width: 350px; height: 50px; margin-bottom: 10px" />
+      <br />
+      <a style="color: black" href="">¿Olvidaste la contraseña?</a>
+      <br />
+      <br />
+      <br />
+      <input
+        style="
+          width: 250px;
+          height: 50px;
+          background-color: rgb(44, 44, 44);
+          color: white;
+        "
+        id="btnIngresar"
+        type="button"
+        value="Confirmar" />
+    </form>
+
+    <!-- Modal Error login-->
+    <div
+      class="modal fade"
+      id="modal-error"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Error</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="mensaje-error">Prueba</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="db.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
